@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function doubleValues(array) {
+  var doubledArray = [];
+  for (var i = 0; i < array.length; i++) {
+    doubledArray.push(array[i] * 2);
+  }
+  return doubledArray;
+}
+
+// Test Case 1
+var numbers1 = [1, 2, 3];
+var doubledNumbers1 = doubleValues(numbers1);
+console.log(doubledNumbers1); // Output: [2, 4, 6]
+
+// Test Case 2
+var numbers2 = [5, 1, 2, 3, 10];
+var doubledNumbers2 = doubleValues(numbers2);
+console.log
+
+
+    </script>
+</body>
+</html>
+
+<!-- Exercise 1: 
+* Write a function called doubleValues which accepts an array and returns a new array with all the values in the array passed to the function doubled
+*
+* Test Case:
+*    Test Case 1: doubleValues([1,2,3]) 
+*    Test Case 2: doubleValues([5,1,2,3,10])  
+*
+* Result: 
+* Test Case 1:  [2,4,6]
+* Test Case 2: [10,2,4,6,20] -->

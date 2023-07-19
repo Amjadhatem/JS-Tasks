@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function addKeyAndValue(array, key, value) {
+  for (var i = 0; i < array.length; i++) {
+    array[i][key] = value;
+  }
+  return array;
+}
+
+// Test Case
+var people = [
+  { name: 'Elie' },
+  { name: 'Tim' },
+  { name: 'Matt' },
+  { name: 'Colt' }
+];
+
+var updatedPeople = addKeyAndValue(people, 'title', 'instructor');
+console.log(updatedPeople);
+
+    </script>
+</body>
+</html>
+
+<!-- * Exercise 4:
+* Write a function called addKeyAndValue which accepts an array of objects, a key, and a value and returns the array passed 
+* to the function with the new key and value added for each object 
+* 
+* Test Cases:
+*   Test Case :addKeyAndValue([{name: 'Elie'}, {name: 'Tim'}, {name: 'Matt'}, {name: 'Colt'}], 'title', 'instructor') 
+*   
+* Result:
+*   [{name: 'Elie', title:'instructor'}, {name: 'Tim', title:'instructor'}, {name: 'Matt', title:'instructor'}, {name: 'Colt', title:'instructor'}]
+* -->

@@ -3,44 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JS-Tasks</title>
-    <style>
-        body{
-            background-color: rgb(29, 7, 7);
-            text-align: center;
-        }
-        h1{
-            color: white;
-        }
-        h1:hover{
-            color: red;
-            cursor:default;
-            transition: .5s;
-        }
-        .task_1{
-            margin-top: 8rem;
-        }
-        a{
-            color: white;
-        }
-        a:hover{
-            color: blanchedalmond;
-            transition: .5s;
-        }
+    <title>Tasks</title>
+    <link rel="icon" type="image/x-icon" href="./task-vector-icon.jpg">
+    <link rel="stylesheet" href="./mystyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Pacifico&family=Signika+Negative:wght@500&display=swap" rel="stylesheet">
+   
 
-    </style>
 </head>
 <body>
-    <div class="task_1"> <br>
-    <h1>Tasks [9 - 7]</h1>
-    <h2><a href="./7-9/task1.html">Task1</a></h2>
-    <h2><a href="./7-9/task2.html">Task2</a></h2>
-    <h2><a href="./7-9/task3.html">Task3</a></h2>
-</div>
-    <hr style="width: 50%;"><br>
-    <div>
-    <h1>Tasks [10 - 7]</h1>
-    <h2><a href="./10-7/task1.html">Task1</a></h2>
-</div>
+    <div class="animated-background"></div>
+
+    <nav class="dropdown-menu">
+        <ul>
+
+            <li class="dropdown">
+                <a class="a1" href="#"><h2>Tasks [ 9 - 7 ]</h2></a>
+                <ul class="submenu">
+                  <div><li><a href="./9-7/task1.html">Task 1</a></li>
+                  <li><a href="./9-7/task2.html">Task 2</a></li>
+                  <li><a href="./9-7/task3.html">Task 3</a></li></div>
+                </ul>
+              </li> 
+
+              <li class="dropdown">
+                <a class="a1" href="#"><h2>Tasks [ 10 - 7 ]</h2></a>
+                <ul class="submenu">
+                  <li><a href="./10-7/task1.html">Task 1</a></li>
+                </ul>
+              </li>
+
+              <li class="dropdown">
+                <a  class="a1" href="#"><h2>Array Tasks</h2></a>
+                <ul class="submenu">
+                  <li><a href="./16-7 (Array)/Task1.html">Task 1</a></li>
+                  <li><a href="./16-7 (Array)/Task2.html">Task 2</a></li>
+                  <li><a href="./16-7 (Array)/Task3.html">Task 3</a></li>
+                  <li><a href="./16-7 (Array)/Task4.html">Task 4</a></li>
+                  <li><a href="./16-7 (Array)/Task5.html">Task 5</a></li>
+                  <li><a href="./16-7 (Array)/Task6.html">Task 6</a></li>
+                  <li><a href="./16-7 (Array)/Task7.html">Task 7</a></li>
+                  <li><a href="./16-7 (Array)/Task8.html">Task 8</a></li>
+                  <li><a href="./16-7 (Array)/Task9.html">Task 9</a></li>
+                  <li><a href="./16-7 (Array)/Task10.html">Task 10</a></li>
+                  <li><a href="./16-7 (Array)/Task11.html">Task 11</a></li>
+                  <li><a href="./16-7 (Array)/Task12.html">Task 12</a></li>
+                  <li><a href="./16-7 (Array)/Task13.html">Task 13</a></li>
+                  <li><a href="./16-7 (Array)/Task14.html">Task 14</a></li>
+                </ul>
+              </li>
+
+
+          <li class="dropdown">
+            <a class="a1" href="#"><h2>Mapping Tasks</h2></a>
+            <ul class="submenu">
+              <li><a href="./17-7(Mapping)/Task1.html">Task 1</a></li>
+              <li><a href="./17-7(Mapping)/Task2.html">Task 2</a></li>
+              <li><a href="./17-7(Mapping)/Task3.html">Task 3</a></li>
+              <li><a href="./17-7(Mapping)/Task4.html">Task 4</a></li>
+              <li><a href="./17-7(Mapping)/Task5.html">Task 5</a></li>
+              <li><a href="./17-7(Mapping)/Task6.html">Task 6</a></li>
+              <li><a href="./17-7(Mapping)/Task7.html">Task 7</a></li>
+              <li><a href="./17-7(Mapping)/Task8.html">Task 8</a></li>
+            </ul>
+          </li>
+
+          <li class="dropdown">
+            <a class="a1" href="#"><h2>Foreach Tasks</h2></a>
+            <ul class="submenu">
+              <li><a href="./foreach/Task1.html">Task 1</a></li>
+              <li><a href="./foreach/Task2.html">Task 2</a></li>
+              <li><a href="./foreach/Task3.html">Task 3</a></li>
+              <li><a href="./foreach/Task4.html">Task 4</a></li>
+              <li><a href="./foreach/Task5.html">Task 5</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+
+      <script>
+        document.addEventListener("DOMContentLoaded", function() {
+  var dropdowns = document.querySelectorAll(".dropdown") ;
+
+  for (var i = 0; i < dropdowns.length; i++) {
+    dropdowns[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+    });
+  }
+});
+
+      </script>
 </body>
 </html>

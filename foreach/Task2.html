@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function onlyEvenValues(array) {
+  var evenArray = [];
+  for (var i = 0; i < array.length; i++) {
+    if (array[i] % 2 === 0) {
+      evenArray.push(array[i]);
+    }
+  }
+  return evenArray;
+}
+
+// Test Case 1
+var numbers1 = [1, 2, 3];
+var evenNumbers1 = onlyEvenValues(numbers1);
+console.log(evenNumbers1); // Output: [2]
+
+// Test Case 2
+var numbers2 = [5, 1, 2, 3, 10];
+var evenNumbers2 = onlyEvenValues(numbers2);
+console.log(evenNumbers2); // Output: [2, 10]
+
+    </script>
+</body>
+</html>
+
+<!-- Exercise 2:
+* Write a function called onlyEvenValues which accepts an array and returns a new array with only the even values in the array passed to the function
+*
+* Test Cases:
+*   onlyEvenValues([1,2,3]) 
+*   onlyEvenValues([5,1,2,3,10]) 
+* 
+* Result:
+*  Test Case 1:  [2]
+*  Test Case 2: [2,10] -->

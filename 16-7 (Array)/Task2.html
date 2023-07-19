@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Create an array represents your: <br>
+        1- Favorite Food (5) <br>
+        2- Favorite Sport (3) <br>
+        3- Favorite Movie (4)</h1>
+        <p id="Demo"></p>
+        <p id="Demo1"></p>
+        <p id="Demo2"></p>
+
+        <script>
+            var Food = ["macaroni" , "macaroni" , "Bisque" , "Nigiri" , "Pizza Margherita"];
+            var Sport = ["Football" , "Swimming" , "Badminton" ];
+            var Movie = ["Prison Break" , "Breaking Bad" , "Black list" , "Banchie"];
+            document.getElementById("Demo").innerHTML=`Favorite Food : ${Food.join(" , ")}`;
+            document.getElementById("Demo1").innerHTML=`Favorite Sport ${Sport.join(" , ")}`;
+            document.getElementById("Demo2").innerHTML=`Favorite Movie ${Movie.join(" , ")}`;
+        </script>
+    
+</body>
+</html>
+
+<!-- Create an array represents your:
+1- Favorite Food (5)
+2- Favorite Sport (3)
+3- Favorite Movie (4) -->

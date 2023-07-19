@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr = ["john" , "JACOB" , "jinGleHeimer" , "schimdt"];
+        let arr2 = arr.map(function(element){
+            return element.charAt(0).toUpperCase() +element.slice(1).toLowerCase();
+        })
+        console.log(arr2);
+    </script>
+</body>
+</html>
+
+<!-- * Exercise 3:  
+* 
+* Capitalize each of an array of names
+*
+* Test Case: 
+*
+* console.log(capitalizeNames(["john", "JACOB", "jinGleHeimer", "schmidt"])); 
+* 
+* Result:
+*  ["John", "Jacob", "Jingleheimer", "Schmidt"] -->
